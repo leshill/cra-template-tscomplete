@@ -1,0 +1,27 @@
+{
+  "name": "cra-template-tscomplete",
+  "version": "1.0.1",
+  "keywords": [
+    "react",
+    "create-react-app",
+    "template"
+  ],
+  "description": "Opinionated Create React App template with TypeScript, Redux Toolkit, Redux-Saga.",
+  "main": "template.json",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leshill/cra-template-tscomplete.git",
+    "directory": "/"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=10"
+  },
+  "bugs": {
+    "url": "https://github.com/leshill/cra-template-tscomplete/issues"
+  },
+  "files": [
+    "template",
+    "template.json"
+  ]
+}
