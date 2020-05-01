@@ -1,5 +1,5 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
+import { StoryFn } from "@storybook/addons";
 import configureStore from "redux-mock-store";
 
 import StoryProvider from "stories-helpers/StoryProvider";
@@ -16,13 +16,24 @@ function makeStore(status: boolean) {
   });
 }
 
-const onlineStore = makeStore(true);
-const offlineStore = makeStore(false);
+const online = makeStore(true);
+const offline = makeStore(false);
 
-storiesOf("Network", module)
-  .addDecorator((story) => <StoryProvider store={onlineStore} story={story} />)
-  .add("is online", () => <Network />);
+export default {
+  title: "Network Status",
+  component: Network,
+};
 
-storiesOf("Network", module)
-  .addDecorator((story) => <StoryProvider store={offlineStore} story={story} />)
-  .add("is offline", () => <Network />);
+export const networkIsOnline = () => <Network />;
+networkIsOnline.story = {
+  decorators: [
+    (storyFn: StoryFn) => <StoryProvider store={online} story={storyFn} />,
+  ],
+};
+
+export const networkIsOffline = () => <Network />;
+networkIsOffline.story = {
+  decorators: [
+    (storyFn: StoryFn) => <StoryProvider store={offline} story={storyFn} />,
+  ],
+};
