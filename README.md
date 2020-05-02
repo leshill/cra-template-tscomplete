@@ -23,10 +23,23 @@ This template creates a React app with:
 
 There are test examples for React components, React components with Redux, Redux reducers,  and Sagas. Saga testing is done with __Redux-Saga Test Plan__.
 
-StoryBook needs two additional steps to finish setup:
+## Additional scripts
 
-1. Edit `package.json` and change the `xdevDependencies` key to `devDependencies`.
-1. Run `yarn`.
+### `npm lint` or `yarn lint`
+
+Compiles and then lints all Typescript files (_.ts_, _.tsx_).
+
+### `npm lint:fix` or `yarn lint:fix`
+
+Lints and applies fixes on all Typescript files (_.ts_, _.tsx_).
+
+### `npm storybook` or `yarn storybook`
+
+Start the Storybook explorer on port 9009
+
+### `npm build-storybook` or `yarn build-storybook`
+
+Build the storybook configured in the Storybook directory into a static web app and place it inside the `storybook-static` directory.
 
 For more information, please refer to:
 
