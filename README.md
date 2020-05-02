@@ -33,6 +33,10 @@ Compiles and then lints all Typescript files (_.ts_, _.tsx_).
 
 Lints and applies fixes on all Typescript files (_.ts_, _.tsx_).
 
+### `npm lint:watch` or `yarn lint:watch`
+
+Watches and lints (does not compile) all Typescript files (_.ts_, _.tsx_).
+
 ### `npm storybook` or `yarn storybook`
 
 Start the Storybook explorer on port 9009
