@@ -5,8 +5,6 @@
     "create-react-app",
     "react",
     "redux",
-    "saga",
-    "storybook",
     "template",
     "typescript"
   ],
