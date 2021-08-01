@@ -18,10 +18,9 @@ This template creates a React app with:
 
 * TypeScript
 * Redux Toolkit
-* Redux-Saga
 * Sass
 
-There are test examples for React components, React components with Redux, Redux reducers,  and Sagas. Saga testing is done with __Redux-Saga Test Plan__.
+There are test examples for React components, React components with Redux, Redux reducers.
 
 ## Additional scripts
 
