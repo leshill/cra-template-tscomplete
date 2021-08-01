@@ -10,7 +10,7 @@
     "template",
     "typescript"
   ],
-  "description": "Opinionated Create React App template with TypeScript, Redux Toolkit, Redux-Saga.",
+  "description": "Opinionated Create React App template with TypeScript, Redux Toolkit.",
   "main": "template.json",
   "repository": {
     "type": "git",

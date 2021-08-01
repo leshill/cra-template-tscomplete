@@ -7,7 +7,7 @@ import logo from "logo.svg";
 import store from "store";
 import Network from "components/Network";
 
-const App = () => {
+const App: React.FC = () => {
   return (
     <Provider store={store}>
       <div className="App">

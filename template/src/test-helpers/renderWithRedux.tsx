@@ -10,8 +10,8 @@ const rootInitialState = {};
 
 function renderWithRedux(
   ui: JSX.Element,
-  initialState: object = rootInitialState
-) {
+  initialState: any = rootInitialState
+): any {
   const store = mockStore(initialState);
   return {
     ...render(<Provider store={store}>{ui}</Provider>),

@@ -1,10 +1,8 @@
 import { configureStore, getDefaultMiddleware } from "@reduxjs/toolkit";
-import createSagaMiddleware from "redux-saga";
 
 import reducer from "reducers";
-import rootSaga from "sagas";
-
-const sagaMiddleware = createSagaMiddleware();
+import { onlineStatusChange } from "reducers/onlineSlice";
+import registerOnlineListener from "utils/onlineListener";
 
 const store = configureStore({
   devTools: process.env.NODE_ENV !== "production",
@@ -14,12 +12,15 @@ const store = configureStore({
       immutableCheck: false,
       serializableCheck: false,
     }),
-    sagaMiddleware,
   ],
 });
 
-sagaMiddleware.run(rootSaga);
-
 export type AppDispatch = typeof store.dispatch;
+
+registerOnlineListener((status) => {
+  store.dispatch(onlineStatusChange(status));
+});
+
+store.dispatch(onlineStatusChange(window.navigator.onLine));
 
 export default store;
