@@ -36,14 +36,6 @@ Lints and applies fixes on all Typescript files (_.ts_, _.tsx_).
 
 Watches and lints (does not compile) all Typescript files (_.ts_, _.tsx_).
 
-### `npm storybook` or `yarn storybook`
-
-Start the Storybook explorer on port 9009
-
-### `npm build-storybook` or `yarn build-storybook`
-
-Build the storybook configured in the Storybook directory into a static web app and place it inside the `storybook-static` directory.
-
 For more information, please refer to:
 
 - [Getting Started](https://create-react-app.dev/docs/getting-started) – How to create a new app.
