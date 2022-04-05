@@ -16,9 +16,11 @@ yarn create react-app my-app --template tscomplete
 
 This template creates a React app with:
 
-* TypeScript
+* React 18
+* TypeScript 4.6
 * Redux Toolkit
 * Sass
+* Service Worker (see https://cra.link/PWA)
 
 There are test examples for React components, React components with Redux, Redux reducers.
 

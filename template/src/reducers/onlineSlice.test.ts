@@ -1,4 +1,7 @@
-import onlineReducer, { onlineStatusChange, OnlineState } from "./onlineSlice";
+import onlineReducer, {
+  onlineStatusChange,
+  OnlineState,
+} from "reducers/onlineSlice";
 
 describe("online slice", () => {
   it("returns the initial state when starting", () => {

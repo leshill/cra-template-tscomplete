@@ -1,13 +1,10 @@
-import { combineReducers, Action } from "@reduxjs/toolkit";
-import { ThunkAction } from "redux-thunk";
+import { combineReducers } from "@reduxjs/toolkit";
 
-import onlineReducer from "./onlineSlice";
+import onlineReducer from "reducers/onlineSlice";
 
 const reducer = combineReducers({
   network: onlineReducer,
 });
 
 export type RootState = ReturnType<typeof reducer>;
-export type AppThunk = ThunkAction<void, RootState, null, Action<string>>;
-
 export default reducer;
